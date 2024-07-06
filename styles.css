@@ -1,0 +1,1406 @@
+@font-face {
+  font-family: Formula1;
+  src: url(./assits/Formula1\ Display\ Regular.ttf);
+}
+@font-face {
+  font-family: Titillium;
+  src: url(./assits/TitilliumWeb-Regular.ttf);
+}
+@font-face {
+  font-family: TitilliumWeb-Light;
+  src: url(./assits/TitilliumWeb-Light.ttf);
+}
+@font-face {
+  font-family: TitilliumWeb-Bold;
+  src: url(./assits/TitilliumWeb-Bold.ttf);
+}
+* {
+  font-family: Titillium;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.btn-hover {
+  background: linear-gradient(-45deg, #912200, #9f0000, #009384, #007084);
+  background-size: 400% 400%;
+  animation: gradient 9s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.img-dont-show {
+  display: none;
+}
+
+.img-show {
+  display: block;
+}
+
+.text-disable {
+  color: #151515 !important;
+  opacity: 0.3 !important;
+  cursor: pointer;
+}
+
+.text-red {
+  color: #D12F2F !important;
+  opacity: 1 !important;
+  cursor: pointer;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hotsport-points, .participate, .hero-section {
+  max-width: 1301px;
+  margin: auto;
+}
+
+.navbar-toggler-icon {
+  filter: invert(1);
+}
+
+.transition {
+  transition: all 1s ease;
+}
+
+.hide-to-left {
+  transform: translateX(50%);
+  opacity: 0;
+  visibility: hidden;
+}
+
+.hide-to-right {
+  transform: translateX(-50%);
+  opacity: 0;
+  visibility: hidden;
+}
+
+.hide-to-top {
+  transform: translateY(-50%);
+  opacity: 0;
+  visibility: hidden;
+}
+
+.hide-to-bottom {
+  transform: translateY(50%);
+  opacity: 0;
+  visibility: hidden;
+}
+
+.show {
+  transform: translateX(0);
+  opacity: 1;
+  visibility: visible;
+}
+
+header {
+  position: relative;
+}
+header nav {
+  position: fixed !important;
+  z-index: 20;
+  background-color: #E10600;
+  width: 100%;
+  top: 0;
+}
+header nav .container-fluid {
+  max-width: 1300px;
+}
+header nav .container-fluid .logo-bg-white {
+  background-color: white;
+  position: absolute;
+  top: -28px;
+  width: 187px;
+  height: 67px !important;
+  border-radius: 0px 0px 0px 5px;
+  display: grid;
+  place-content: center;
+}
+header nav .container-fluid .logo-bg-white .navbar-brand {
+  margin-right: 0;
+}
+header nav .container-fluid .logo-bg-white .navbar-triangle {
+  -webkit-clip-path: polygon(0 0, 100% 100%, 0 100%);
+          clip-path: polygon(0 0, 100% 100%, 0 100%);
+  background-color: #A9A9A9;
+  width: 12px;
+  height: 10px;
+  position: relative;
+  right: -175px;
+  top: 4px;
+  transform: rotate(90deg);
+}
+header nav .container-fluid .navbar-toggler {
+  border: none;
+}
+header nav .container-fluid .navbar-toggler:focus {
+  box-shadow: none;
+}
+header nav .container-fluid .collapse ul {
+  margin-left: 400px;
+  gap: 20px;
+}
+header nav .container-fluid .collapse ul li {
+  font-family: Titillium;
+  font-size: 16px;
+  font-weight: bold;
+}
+header nav .container-fluid .collapse ul li .nav-link {
+  color: white;
+  transition: all 0.2s ease;
+}
+header nav .container-fluid .collapse ul li .nav-link:hover {
+  opacity: 0.9;
+}
+header nav .container-fluid .collapse div p {
+  font-family: Titillium;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+}
+header nav .container-fluid .collapse div div {
+  width: 37px;
+  height: 37px;
+  display: grid;
+  place-content: center;
+  background-color: black;
+  border-radius: 40px;
+}
+header nav .container-fluid .collapse div div img {
+  width: 23px;
+  filter: invert(1);
+}
+
+.hero-section::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: url("./assits/bg-img.png") no-repeat center center;
+  background-size: cover;
+  content: "";
+  z-index: -1;
+  height: 800px;
+}
+
+.hero-section {
+  justify-content: space-between;
+  height: 734px;
+}
+.hero-section .hero-section-heading {
+  max-width: 327px;
+}
+.hero-section .hero-section-heading h1 {
+  font: normal normal bold 38px/48px Formula1;
+}
+.hero-section .hero-section-slider {
+  max-width: 518px;
+  position: relative;
+  top: 164px;
+}
+.hero-section .hero-section-details {
+  max-width: 327px;
+  position: relative;
+}
+.hero-section .hero-section-details p {
+  font-family: TitilliumWeb-Light;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: lighter;
+  margin-bottom: 53px;
+}
+.hero-section .hero-section-details input {
+  color: white;
+  padding: 14px 40px;
+  font-family: Formula1;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  -webkit-clip-path: polygon(0 30%, 10% 0, 100% 0, 100% 100%, 100% 70%, 90% 100%, 0% 100%, 0% 100%);
+          clip-path: polygon(0 30%, 10% 0, 100% 0, 100% 100%, 100% 70%, 90% 100%, 0% 100%, 0% 100%);
+}
+
+.participate-bg {
+  background-color: #151515;
+}
+
+.participate {
+  padding-top: 57px;
+}
+.participate .asia-cups-logos {
+  justify-content: space-between;
+  margin-bottom: 62px;
+}
+.participate .asia-cups-logos img {
+  width: 289px;
+}
+.participate .how-to-participate {
+  background-color: white;
+  color: black;
+  padding: 43px 0;
+  -webkit-clip-path: polygon(0 6%, 3% 0, 100% 0, 100% 100%, 100% 94%, 97% 100%, 0% 100%, 0% 100%);
+          clip-path: polygon(0 6%, 3% 0, 100% 0, 100% 100%, 100% 94%, 97% 100%, 0% 100%, 0% 100%);
+  margin: 0px 10px;
+}
+.participate .how-to-participate .how-to-participate-nav {
+  border-bottom: 1px solid #B8B8B8;
+}
+.participate .how-to-participate .how-to-participate-nav div {
+  margin-left: 83px;
+}
+.participate .how-to-participate .how-to-participate-nav div a {
+  text-decoration: none;
+  gap: 7px;
+  cursor: pointer;
+  padding-bottom: 22px;
+}
+.participate .how-to-participate .how-to-participate-nav div a img {
+  width: 22px;
+}
+.participate .how-to-participate .how-to-participate-nav div a p {
+  margin: 0;
+  color: #151515;
+  font-weight: bold;
+  font-family: Formula1;
+  font-weight: bold;
+  font-size: 15px;
+}
+.participate .how-to-participate .how-to-participate-nav .football a p {
+  color: #B8B8B8;
+}
+.participate .how-to-participate .how-to-participate-main {
+  gap: 144px;
+  padding: 0px 79px;
+  margin-top: 46px;
+}
+.participate .how-to-participate .how-to-participate-main .participate-details {
+  max-width: 572px;
+}
+.participate .how-to-participate .how-to-participate-main .participate-details .heading {
+  margin-bottom: 38px;
+}
+.participate .how-to-participate .how-to-participate-main .participate-details .heading h2 {
+  font-family: Formula1;
+  font-weight: bold;
+  font-size: 32px;
+}
+.participate .how-to-participate .how-to-participate-main .participate-details .download-btn button::before {
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #D12F2F;
+  position: absolute;
+  z-index: -1;
+  transform: translateX(0%);
+  transition: 0.4s all ease-out;
+}
+.participate .how-to-participate .how-to-participate-main .participate-details .download-btn button {
+  padding: 19px 30px;
+  border: none;
+  background-color: white;
+  -webkit-clip-path: polygon(0 30%, 10% 0, 100% 0, 100% 100%, 100% 70%, 90% 100%, 0% 100%, 0% 100%);
+          clip-path: polygon(0 30%, 10% 0, 100% 0, 100% 100%, 100% 70%, 90% 100%, 0% 100%, 0% 100%);
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.participate .how-to-participate .how-to-participate-main .participate-details .download-btn button span {
+  color: white;
+  margin-left: 7px;
+  font-family: Formula1;
+  font-size: 18px;
+  font-weight: bold;
+  transition: all 0.2s ease-in-out;
+}
+.participate .how-to-participate .how-to-participate-main .participate-details .download-btn button img {
+  width: 30px;
+  filter: invert(1);
+  transition: all 0.2s ease-in-out;
+}
+.participate .how-to-participate .how-to-participate-main .participate-details .download-btn button:hover span {
+  color: black;
+}
+.participate .how-to-participate .how-to-participate-main .participate-details .download-btn button:hover img {
+  filter: invert(0);
+}
+.participate .how-to-participate .how-to-participate-main .participate-details .download-btn button:hover::before {
+  transform: translateX(-100%);
+}
+.participate .how-to-participate .how-to-participate-main .participate-img {
+  position: relative;
+  margin-right: 10px;
+}
+.participate .how-to-participate .how-to-participate-main .participate-img .participate-img-bg {
+  background-color: #FFD3CC;
+  position: absolute;
+  width: 438px;
+  height: 334px;
+  left: -83px;
+  top: 139px;
+  border-radius: 20px;
+}
+.participate .how-to-participate .how-to-participate-main .participate-img img {
+  position: relative;
+  top: 0;
+  max-width: 277px;
+  z-index: 1;
+}
+.participate .cricket-section .how-to-participate-nav .cricket a {
+  border-bottom: 3px solid #D12F2F;
+}
+.participate .football-section .how-to-participate-nav .cricket a img {
+  filter: contrast(0.5);
+}
+.participate .football-section .how-to-participate-nav .cricket a p {
+  color: #B8B8B8;
+}
+.participate .football-section .how-to-participate-nav .football a {
+  border-bottom: 3px solid red;
+}
+.participate .football-section .how-to-participate-nav .football a img {
+  filter: invert(1);
+}
+.participate .football-section .how-to-participate-nav .football a p {
+  color: #151515;
+}
+
+.features {
+  padding: 100px 0;
+  background-color: #151515;
+}
+.features .heading {
+  max-width: 612px;
+  margin: auto;
+  margin-bottom: 72px;
+}
+.features .heading h2 {
+  text-align: center;
+  font-family: Formula1;
+  font-weight: bold;
+  font-size: 38px;
+  color: white;
+}
+.features .feature-cards {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+  gap: 40px;
+  margin-bottom: 85px;
+  position: relative;
+}
+.features .feature-cards .feature-card-1,
+.features .feature-cards .feature-card-2 {
+  background-color: #F0AF30;
+  -webkit-clip-path: polygon(0 10%, 3% 0, 100% 0, 100% 100%, 100% 90%, 97% 100%, 0% 100%, 0% 100%);
+          clip-path: polygon(0 10%, 3% 0, 100% 0, 100% 100%, 100% 90%, 97% 100%, 0% 100%, 0% 100%);
+  padding: 50px 28px;
+  gap: 30px;
+}
+.features .feature-cards .feature-card-1 .money-img img, .features .feature-cards .feature-card-1 .win-img img,
+.features .feature-cards .feature-card-2 .money-img img,
+.features .feature-cards .feature-card-2 .win-img img {
+  width: 148px;
+}
+.features .feature-cards .feature-card-1 .details,
+.features .feature-cards .feature-card-2 .details {
+  width: 373px;
+}
+.features .feature-cards .feature-card-1 .details h4,
+.features .feature-cards .feature-card-2 .details h4 {
+  color: #F0AF30;
+  margin-bottom: 13px;
+  font-family: Formula1;
+  font-weight: bold;
+  font-size: 24px;
+}
+.features .feature-cards .feature-card-1 .details p,
+.features .feature-cards .feature-card-2 .details p {
+  color: white;
+  font-family: Titillium;
+  font-size: 17px;
+  opacity: 0.9;
+}
+.features .feature-cards .feature-card-1::after,
+.features .feature-cards .feature-card-2::after {
+  content: "";
+  position: absolute;
+  -webkit-clip-path: polygon(0 10%, 3% 0, 100% 0, 100% 100%, 100% 90%, 97% 100%, 0% 100%, 0% 100%);
+          clip-path: polygon(0 10%, 3% 0, 100% 0, 100% 100%, 100% 90%, 97% 100%, 0% 100%, 0% 100%);
+  padding: 50px 28px;
+  background-color: #151515;
+  z-index: -1;
+  gap: 30px;
+  width: 99.5%;
+  margin: auto;
+  height: 99%;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+.features .button button::before {
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #D12F2F;
+  position: absolute;
+  z-index: -1;
+  transform: translateX(0%);
+  transition: 0.4s all ease-out;
+}
+.features .button button {
+  padding: 19px 30px;
+  border: none;
+  background-color: white;
+  -webkit-clip-path: polygon(0 30%, 10% 0, 100% 0, 100% 100%, 100% 70%, 90% 100%, 0% 100%, 0% 100%);
+          clip-path: polygon(0 30%, 10% 0, 100% 0, 100% 100%, 100% 70%, 90% 100%, 0% 100%, 0% 100%);
+  display: flex;
+  align-items: center;
+  margin: auto;
+  position: relative;
+}
+.features .button button span {
+  color: white;
+  margin-left: 7px;
+  font-family: Formula1;
+  font-size: 18px;
+  font-weight: bold;
+  transition: all 0.2s ease-in-out;
+}
+.features .button button img {
+  width: 30px;
+  filter: invert(1);
+  transition: all 0.2s ease-in-out;
+}
+.features .button button:hover span {
+  color: black;
+}
+.features .button button:hover img {
+  filter: invert(0);
+}
+.features .button button:hover::before {
+  transform: translateX(-100%);
+}
+
+.footer-bg {
+  background-color: #000000;
+}
+.footer-bg footer {
+  max-width: 1300px;
+  margin: auto;
+  justify-content: space-between;
+}
+.footer-bg footer div:nth-child(1) {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.footer-bg footer div:nth-child(1) a img {
+  max-width: 200px;
+}
+.footer-bg footer div:nth-child(1) .social-media {
+  gap: 5px;
+  flex-wrap: wrap;
+}
+.footer-bg footer div:nth-child(1) .social-media div {
+  border-radius: 40px;
+  display: grid;
+  place-content: center;
+  height: 37px;
+  width: 37px;
+  background-color: #303030;
+  cursor: pointer;
+}
+.footer-bg footer div:nth-child(1) .social-media div img {
+  height: 18px;
+  filter: invert(1);
+}
+.footer-bg footer div:nth-child(1) .social-media div:hover {
+  opacity: 0.8;
+}
+.footer-bg footer div ul li a:hover {
+  opacity: 0.8;
+}
+
+.sub-footer {
+  background-color: #000000;
+  padding: 20px;
+}
+.sub-footer div {
+  color: white;
+  max-width: 1300px;
+  margin: auto;
+}
+.sub-footer div h6 {
+  font-family: Formula1;
+  font-size: 15px;
+  font-weight: bold;
+  padding-bottom: 16px;
+}
+.sub-footer div p {
+  font-family: Titillium;
+  font-size: 14px;
+  opacity: 0.8;
+}
+.sub-footer div p:nth-child(2) {
+  margin-bottom: 21px;
+}
+
+.hotsport-points-bg {
+  background-color: #151515;
+}
+
+.hotsport-points-main-heading {
+  padding-top: 70px;
+  margin-bottom: 50px;
+}
+.hotsport-points-main-heading h2 {
+  color: white;
+  font-family: Formula1;
+  font-size: 38px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.hotsport-points .hotsport-points-t20 {
+  background-color: white;
+  color: black;
+  padding: 43px 0;
+  -webkit-clip-path: polygon(0 6%, 3% 0, 100% 0, 100% 100%, 100% 94%, 97% 100%, 0% 100%, 0% 100%);
+          clip-path: polygon(0 6%, 3% 0, 100% 0, 100% 100%, 100% 94%, 97% 100%, 0% 100%, 0% 100%);
+}
+.hotsport-points .hotsport-points-t20 .hotsport-points-nav {
+  gap: 51px;
+  padding-left: 52px;
+}
+.hotsport-points .hotsport-points-t20 .hotsport-points-nav p {
+  font-family: Formula1;
+  font-size: 16px;
+  font-weight: bold;
+  color: #B8B8B8;
+  cursor: pointer;
+}
+.hotsport-points .hotsport-points-t20 .hotsport-points-nav p:nth-child(1) {
+  position: relative;
+  color: black;
+  font-family: Formula1;
+  font-size: 16px;
+  font-weight: bold;
+}
+.hotsport-points .hotsport-points-t20 .hotsport-points-nav p:nth-child(1) span {
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  transform: matrix(0.26, -0.97, 0.97, 0.26, 0, 0);
+  background: transparent linear-gradient(180deg, #D12F2F 0%, rgba(255, 255, 255, 0) 100%) 0% 0% no-repeat padding-box;
+  border-radius: 50px;
+  left: -16px;
+}
+.hotsport-points .hotsport-points-t20 .hotsport-points-t20-red-bg {
+  height: 42px;
+  background-color: #D12F2F;
+  display: flex;
+  align-items: center;
+  margin-top: 18px;
+  margin-bottom: 29px;
+}
+.hotsport-points .hotsport-points-t20 .hotsport-points-t20-red-bg p {
+  font-family: Formula1;
+  font-weight: bold;
+  font-size: 14px;
+  color: white;
+  margin-left: 30px;
+}
+.hotsport-points .hotsport-points-t20 .score-group {
+  gap: 20px;
+  margin: auto;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.hotsport-points .hotsport-points-t20 .score-group .score-chart {
+  width: 295px;
+  border: 2px solid #E7E7E7;
+  border-radius: 12px;
+}
+.hotsport-points .hotsport-points-t20 .score-group .score-chart .heading div:nth-child(1) {
+  padding: 7px 12px;
+}
+.hotsport-points .hotsport-points-t20 .score-group .score-chart .heading div:nth-child(1) h3 {
+  font-family: Formula1;
+  font-weight: bold;
+  font-size: 14px;
+  color: #151515;
+}
+.hotsport-points .hotsport-points-t20 .score-group .score-chart .heading .score-container {
+  max-height: 337px;
+  overflow-y: scroll;
+}
+.hotsport-points .hotsport-points-t20 .score-group .score-chart .heading .score-container div {
+  height: 29px;
+  padding: 5px 14px;
+}
+.hotsport-points .hotsport-points-t20 .score-group .score-chart .heading .score-container div p {
+  color: #151515;
+  font-family: Titillium;
+  font-size: 13px;
+}
+.hotsport-points .hotsport-points-t20 .score-group .score-chart .heading .score-container div p:nth-child(2) {
+  font-family: Titillium;
+  font-size: 13px;
+  font-weight: bold;
+  color: #308F19;
+  border-left: 1px solid #FFFFFF;
+  width: 50px;
+  text-align: center;
+}
+.hotsport-points .hotsport-points-t20 .score-group .score-chart .heading .score-container div:nth-child(odd) {
+  background-color: #F5F5F5;
+}
+.hotsport-points .hotsport-points-t20 .score-group .score-chart .heading .score-container div:nth-child(2) p:nth-child(2) {
+  color: #D12F2F;
+}
+.hotsport-points .hotsport-points-t20 .score-group .batting,
+.hotsport-points .hotsport-points-t20 .score-group .bowling,
+.hotsport-points .hotsport-points-t20 .score-group .fielding,
+.hotsport-points .hotsport-points-t20 .score-group .additional-points {
+  /* Track */
+  /* Handle */
+}
+.hotsport-points .hotsport-points-t20 .score-group .batting ::-webkit-scrollbar,
+.hotsport-points .hotsport-points-t20 .score-group .bowling ::-webkit-scrollbar,
+.hotsport-points .hotsport-points-t20 .score-group .fielding ::-webkit-scrollbar,
+.hotsport-points .hotsport-points-t20 .score-group .additional-points ::-webkit-scrollbar {
+  width: 5px;
+}
+.hotsport-points .hotsport-points-t20 .score-group .batting ::-webkit-scrollbar-track,
+.hotsport-points .hotsport-points-t20 .score-group .bowling ::-webkit-scrollbar-track,
+.hotsport-points .hotsport-points-t20 .score-group .fielding ::-webkit-scrollbar-track,
+.hotsport-points .hotsport-points-t20 .score-group .additional-points ::-webkit-scrollbar-track {
+  box-shadow: transparent;
+  border-radius: 10px;
+}
+.hotsport-points .hotsport-points-t20 .score-group .batting ::-webkit-scrollbar-thumb,
+.hotsport-points .hotsport-points-t20 .score-group .bowling ::-webkit-scrollbar-thumb,
+.hotsport-points .hotsport-points-t20 .score-group .fielding ::-webkit-scrollbar-thumb,
+.hotsport-points .hotsport-points-t20 .score-group .additional-points ::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+}
+.hotsport-points .hotsport-points-t20 .score-group .batting ::-webkit-scrollbar-thumb {
+  background: #CCE0FA;
+}
+.hotsport-points .hotsport-points-t20 .score-group .bowling ::-webkit-scrollbar-thumb {
+  background: #FBCCC9;
+}
+.hotsport-points .hotsport-points-t20 .score-group .fielding ::-webkit-scrollbar-thumb {
+  background: #BBB9F9;
+}
+.hotsport-points .hotsport-points-t20 .score-group .additional-points ::-webkit-scrollbar-thumb {
+  background: #F8C4FA;
+}
+.hotsport-points .hotsport-points-t20 .score-group .batting {
+  border: 2px solid #CCE0FA;
+}
+.hotsport-points .hotsport-points-t20 .score-group .batting .heading .gradient {
+  background: transparent linear-gradient(180deg, #B9D5F9 0%, rgba(255, 255, 255, 0) 100%) 0% 0% no-repeat padding-box;
+  border-radius: 10px 10px 0px 0px;
+}
+.hotsport-points .hotsport-points-t20 .score-group .batting .heading .score-container div:nth-child(odd) {
+  background: #F1F7FF 0% 0% no-repeat padding-box;
+}
+.hotsport-points .hotsport-points-t20 .score-group .bowling {
+  border: 2px solid #FBCCC9;
+}
+.hotsport-points .hotsport-points-t20 .score-group .bowling .heading .gradient {
+  background: transparent linear-gradient(180deg, #F9BDB9 0%, rgba(255, 255, 255, 0) 100%) 0% 0% no-repeat padding-box;
+  border-radius: 10px 10px 0px 0px;
+}
+.hotsport-points .hotsport-points-t20 .score-group .bowling .heading .score-container div:nth-child(odd) {
+  background: #FFF3F1 0% 0% no-repeat padding-box;
+}
+.hotsport-points .hotsport-points-t20 .score-group .fielding {
+  border: 2px solid #C6C5FA;
+}
+.hotsport-points .hotsport-points-t20 .score-group .fielding .heading .gradient {
+  background: transparent linear-gradient(180deg, #BBB9F9 0%, rgba(255, 255, 255, 0) 100%) 0% 0% no-repeat padding-box;
+  border-radius: 10px 10px 0px 0px;
+}
+.hotsport-points .hotsport-points-t20 .score-group .fielding .heading .score-container div:nth-child(odd) {
+  background: #F2F1FF 0% 0% no-repeat padding-box;
+}
+.hotsport-points .hotsport-points-t20 .score-group .additional-points {
+  border: 2px solid #F8C4FA;
+}
+.hotsport-points .hotsport-points-t20 .score-group .additional-points .heading .gradient {
+  background: transparent linear-gradient(180deg, #F7B9F9 0%, rgba(255, 255, 255, 0) 100%) 0% 0% no-repeat padding-box;
+  border-radius: 10px 10px 0px 0px;
+}
+.hotsport-points .hotsport-points-t20 .score-group .additional-points .heading .score-container div:nth-child(odd) {
+  background: #FFF1FF 0% 0% no-repeat padding-box;
+}
+.hotsport-points .hotsport-points-t20 .other-info {
+  max-width: 1234px;
+  margin: auto;
+  margin-top: 24px;
+}
+.hotsport-points .hotsport-points-t20 .other-info div {
+  padding: 23px 18px;
+  background: #F5F5F5 0% 0% no-repeat padding-box;
+  border: 2px solid #E7E7E7;
+  border-radius: 12px;
+  height: 69px;
+  gap: 7px;
+}
+.hotsport-points .hotsport-points-t20 .other-info div p {
+  font-family: Formula1;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0px;
+  color: #151515;
+}
+.hotsport-points .odi-section .hotsport-points-nav p:nth-child(1) {
+  color: #B8B8B8;
+}
+.hotsport-points .odi-section .hotsport-points-nav p:nth-child(2) {
+  position: relative;
+  color: black;
+}
+.hotsport-points .odi-section .hotsport-points-nav p:nth-child(2) span {
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  transform: matrix(0.26, -0.97, 0.97, 0.26, 0, 0);
+  background: transparent linear-gradient(180deg, #D12F2F 0%, rgba(255, 255, 255, 0) 100%) 0% 0% no-repeat padding-box;
+  border-radius: 50px;
+  left: -16px;
+}
+.hotsport-points .test-section .hotsport-points-nav p:nth-child(1) {
+  color: #B8B8B8;
+}
+.hotsport-points .test-section .hotsport-points-nav p:nth-child(2) {
+  color: #B8B8B8;
+}
+.hotsport-points .test-section .hotsport-points-nav p:nth-child(3) {
+  position: relative;
+  color: black;
+}
+.hotsport-points .test-section .hotsport-points-nav p:nth-child(3) span {
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  transform: matrix(0.26, -0.97, 0.97, 0.26, 0, 0);
+  background: transparent linear-gradient(180deg, #D12F2F 0%, rgba(255, 255, 255, 0) 100%) 0% 0% no-repeat padding-box;
+  border-radius: 50px;
+  left: -16px;
+}
+.hotsport-points .t10-section .hotsport-points-nav p:nth-child(1), .hotsport-points .t10-section .hotsport-points-nav p:nth-child(2), .hotsport-points .t10-section .hotsport-points-nav p:nth-child(3) {
+  color: #B8B8B8;
+}
+.hotsport-points .t10-section .hotsport-points-nav p:nth-child(4) {
+  position: relative;
+  color: black;
+}
+.hotsport-points .t10-section .hotsport-points-nav p:nth-child(4) span {
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  transform: matrix(0.26, -0.97, 0.97, 0.26, 0, 0);
+  background: transparent linear-gradient(180deg, #D12F2F 0%, rgba(255, 255, 255, 0) 100%) 0% 0% no-repeat padding-box;
+  border-radius: 50px;
+  left: -16px;
+}
+.hotsport-points .hundred-section .hotsport-points-nav p:nth-child(1), .hotsport-points .hundred-section .hotsport-points-nav p:nth-child(2), .hotsport-points .hundred-section .hotsport-points-nav p:nth-child(3), .hotsport-points .hundred-section .hotsport-points-nav p:nth-child(4) {
+  color: #B8B8B8;
+}
+.hotsport-points .hundred-section .hotsport-points-nav p:nth-child(5) {
+  position: relative;
+  color: black;
+}
+.hotsport-points .hundred-section .hotsport-points-nav p:nth-child(5) span {
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  transform: matrix(0.26, -0.97, 0.97, 0.26, 0, 0);
+  background: transparent linear-gradient(180deg, #D12F2F 0%, rgba(255, 255, 255, 0) 100%) 0% 0% no-repeat padding-box;
+  border-radius: 50px;
+  left: -16px;
+}
+
+@media (max-width: 1330px) {
+  .hero-section::before {
+    height: 598px;
+  }
+  .hero-section {
+    justify-content: center;
+    height: 532px;
+  }
+  .hero-section .hero-section-heading {
+    max-width: 258px;
+  }
+  .hero-section .hero-section-heading h1 {
+    font: normal normal bold 30px/42px Formula1;
+  }
+  .hero-section .hero-section-slider {
+    max-width: 380px;
+  }
+  .hero-section .hero-section-details {
+    max-width: 258px;
+  }
+  .participate .asia-cups-logos {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .participate .how-to-participate .how-to-participate-main .participate-details .heading h2 {
+    font-size: 26px;
+  }
+  .hotsport-points {
+    margin: 0 10px;
+  }
+  .hotsport-points .hotsport-points-t20 .score-group {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media (max-width: 1300px) {
+  .features .feature-cards {
+    gap: 20px;
+    margin: 0 10px;
+    margin-bottom: 80px;
+  }
+}
+@media (max-width: 1260px) {
+  .features .feature-cards {
+    margin: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 80px;
+  }
+  .features .feature-cards .feature-card {
+    padding: 20px;
+    align-items: center;
+  }
+  .features .feature-cards .feature-card .money-img img, .features .feature-cards .feature-card .win-img img {
+    width: 120px;
+  }
+  .features .feature-cards .feature-card .details {
+    width: 359px;
+  }
+  .features .feature-cards .feature-card .details h4 {
+    margin-bottom: 10px;
+    font-size: 22px;
+  }
+}
+@media (max-width: 1060px) {
+  header nav .container-fluid .collapse ul {
+    margin-left: 267px;
+  }
+  .hero-section {
+    height: 518px;
+  }
+  .hero-section .hero-section-slider {
+    top: 159px;
+  }
+}
+@media (max-width: 990px) {
+  header nav .container-fluid .collapse ul {
+    margin-left: 0px;
+    gap: 0px;
+    margin-top: 25px;
+  }
+  #display-container-none {
+    display: none;
+  }
+  .participate .how-to-participate, .hotsport-points .hotsport-points-t20 {
+    -webkit-clip-path: polygon(0 6%, 6% 0, 100% 0, 100% 100%, 100% 94%, 94% 100%, 0% 100%, 0% 100%);
+            clip-path: polygon(0 6%, 6% 0, 100% 0, 100% 100%, 100% 94%, 94% 100%, 0% 100%, 0% 100%);
+  }
+}
+@media (max-width: 920px) {
+  .hero-section .hero-section-heading {
+    max-width: 241px;
+  }
+  .hero-section .hero-section-heading h1 {
+    font: normal normal bold 28px/40px Formula1;
+  }
+  .hero-section .hero-section-slider {
+    max-width: 300px;
+  }
+  .hero-section .hero-section-details {
+    max-width: 225px;
+  }
+  .hero-section .hero-section-details p {
+    font-size: 17px;
+    line-height: 22px;
+    margin-bottom: 38px;
+  }
+  .hero-section .hero-section-details input {
+    padding: 10px 22px;
+    font-size: 16px;
+  }
+  .participate .how-to-participate .how-to-participate-main {
+    gap: 80px;
+    padding: 0px 79px;
+  }
+  .participate .how-to-participate .how-to-participate-main .participate-img .participate-img-bg {
+    width: 324px;
+    height: 245px;
+    left: -52px;
+    top: 169px;
+  }
+  .participate .how-to-participate .how-to-participate-main .participate-img img {
+    top: 30px;
+    max-width: 225px;
+  }
+  .participate .how-to-participate .how-to-participate-main .participate-details .heading h2 {
+    font-size: 26px;
+  }
+  .participate .how-to-participate .how-to-participate-main .participate-img .football-img-size {
+    top: 17px;
+  }
+}
+@media (max-width: 880px) {
+  .hero-section .hero-section-slider {
+    top: 115px;
+  }
+  .participate {
+    padding-top: 20px;
+  }
+  .participate .asia-cups-logos {
+    margin-bottom: 20px;
+  }
+  .participate .asia-cups-logos img {
+    width: 180px;
+  }
+  .participate .how-to-participate .how-to-participate-main {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+}
+@media (max-width: 800px) {
+  .hero-section::before {
+    height: 866px;
+  }
+  .hero-section {
+    flex-direction: column;
+    height: 800px;
+  }
+  .hero-section .hero-section-heading {
+    max-width: 532px;
+    text-align: center;
+  }
+  .hero-section .hero-section-slider {
+    top: 280px;
+  }
+  .hero-section .hero-section-details {
+    max-width: 385px;
+    position: relative;
+    bottom: 396px;
+    text-align: center;
+  }
+}
+@media (max-width: 640px) {
+  .hero-section .hero-section-slider {
+    top: 204px;
+  }
+  .batting {
+    border: 2px solid #CCE0FA !important;
+  }
+  .batting .heading .gradient {
+    background: transparent linear-gradient(180deg, #B9D5F9 0%, rgba(255, 255, 255, 0) 100%) 0% 0% no-repeat padding-box;
+    border-radius: 10px 10px 0px 0px;
+  }
+  .batting .heading .score-container div:nth-child(odd) {
+    background: #F1F7FF 0% 0% no-repeat padding-box !important;
+  }
+  .bowling {
+    border: 2px solid #FBCCC9 !important;
+  }
+  .bowling .heading .gradient {
+    background: transparent linear-gradient(180deg, #F9BDB9 0%, rgba(255, 255, 255, 0) 100%) 0% 0% no-repeat padding-box;
+    border-radius: 10px 10px 0px 0px;
+  }
+  .bowling .heading .score-container div:nth-child(odd) {
+    background: #FFF3F1 0% 0% no-repeat padding-box !important;
+  }
+  .fielding {
+    border: 2px solid #C6C5FA !important;
+  }
+  .fielding .heading .gradient {
+    background: transparent linear-gradient(180deg, #BBB9F9 0%, rgba(255, 255, 255, 0) 100%) 0% 0% no-repeat padding-box;
+    border-radius: 10px 10px 0px 0px;
+  }
+  .fielding .heading .score-container div:nth-child(odd) {
+    background: #F2F1FF 0% 0% no-repeat padding-box !important;
+  }
+  .additional-points {
+    border: 2px solid #F8C4FA !important;
+  }
+  .additional-points .heading .gradient {
+    background: transparent linear-gradient(180deg, #F7B9F9 0%, rgba(255, 255, 255, 0) 100%) 0% 0% no-repeat padding-box;
+    border-radius: 10px 10px 0px 0px;
+  }
+  .additional-points .heading .score-container div:nth-child(odd) {
+    background: #FFF1FF 0% 0% no-repeat padding-box !important;
+  }
+  .participate .how-to-participate, .hotsport-points .hotsport-points-t20 {
+    -webkit-clip-path: polygon(0 0%, 0% 0, 100% 0, 100% 100%, 100% 100%, 100% 100%, 0% 100%, 0% 100%);
+            clip-path: polygon(0 0%, 0% 0, 100% 0, 100% 100%, 100% 100%, 100% 100%, 0% 100%, 0% 100%);
+    border-radius: 10px;
+  }
+}
+@media (max-width: 600px) {
+  .hotsport-points-main-heading h2 {
+    font-size: 28px;
+  }
+  .features .heading h2 {
+    font-size: 28px;
+  }
+  .features .feature-cards {
+    margin-bottom: 35px;
+  }
+  .features .feature-cards .feature-card {
+    padding: 13px;
+  }
+  .features .feature-cards .feature-card .money-img img, .features .feature-cards .feature-card .win-img img {
+    width: 80px;
+  }
+  .features .feature-cards .feature-card .details {
+    width: 337px;
+  }
+  .features .feature-cards .feature-card .details h4 {
+    font-size: 20px;
+  }
+  .features .feature-cards .feature-card .details p {
+    font-size: 16px;
+    line-height: 19px;
+  }
+}
+@media (max-width: 562px) {
+  .participate .how-to-participate .how-to-participate-main .participate-details .details div p:nth-child(1) {
+    line-height: 19px;
+    margin-bottom: 22px;
+  }
+  footer div {
+    display: grid;
+    place-content: center;
+  }
+  footer div ul li a {
+    text-align: center;
+  }
+}
+@media (max-width: 500px) {
+  .hotsport-points .hotsport-points-t20 .hotsport-points-nav {
+    gap: 22px;
+    padding-left: 32px;
+  }
+  .participate .how-to-participate .how-to-participate-main {
+    padding: 0px 20px;
+  }
+  .participate .how-to-participate .how-to-participate-main .participate-details .details div p:nth-child(1) {
+    line-height: 26px;
+    margin-bottom: 25px;
+  }
+  .features .feature-cards .feature-card {
+    margin: auto 6px;
+    gap: 17px;
+  }
+  .features .feature-cards .feature-card .details {
+    width: 300px;
+  }
+  .features .feature-cards .feature-card .details h4 {
+    font-size: 18px;
+  }
+  .features .feature-cards .feature-card .details p {
+    font-size: 14px;
+  }
+}
+@media (max-width: 440px) {
+  .navbar-brand img {
+    width: 121px;
+  }
+  header nav .container-fluid .logo-bg-white {
+    height: 55px;
+    width: 144px;
+    position: absolute;
+    top: -28px;
+    height: 67px !important;
+    width: 144px;
+    border-radius: 0px 0px 0px 5px;
+    display: grid;
+    place-content: center;
+  }
+  header nav .container-fluid .logo-bg-white .navbar-brand {
+    margin-right: 0;
+  }
+  header nav .container-fluid .logo-bg-white .navbar-triangle {
+    -webkit-clip-path: polygon(0 0, 100% 100%, 0 100%);
+            clip-path: polygon(0 0, 100% 100%, 0 100%);
+    background-color: #A9A9A9;
+    width: 12px;
+    height: 10px;
+    position: relative;
+    right: -132px;
+    top: 7px;
+    transform: rotate(90deg);
+  }
+  .hero-section .hero-section-heading h1, .participate .how-to-participate .how-to-participate-main .participate-details .heading h2, .hotsport-points-main-heading h2, .features .heading h2 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .hero-section .hero-section-details input, .participate .how-to-participate .how-to-participate-main .participate-details .download-btn button span, .features .button button span {
+    font-size: 13px;
+  }
+  .hero-section .hero-section-details input, .participate .how-to-participate .how-to-participate-main .participate-details .download-btn button, .features .button button {
+    padding: 7px 15px;
+  }
+  .hero-section .hero-section-slider {
+    top: 214px;
+  }
+  .features .feature-cards {
+    gap: 15px;
+  }
+  .features .feature-cards .feature-card {
+    margin: 0px;
+    gap: 10px;
+    padding: 9px;
+  }
+  .features .feature-cards .feature-card .details {
+    width: 239px;
+  }
+  .features .feature-cards .feature-card .details h4 {
+    font-size: 15px;
+  }
+  .features .feature-cards .feature-card .details p {
+    font-size: 13px;
+    line-height: 15px;
+  }
+  .features .feature-cards .feature-card .money-img img, .features .feature-cards .feature-card .win-img img {
+    width: 70px;
+  }
+  .participate .how-to-participate .how-to-participate-nav div {
+    margin-left: 22px;
+  }
+  .participate .asia-cups-logos img {
+    width: 120px;
+  }
+  .participate .how-to-participate .how-to-participate-main .participate-details .details div p:nth-child(1) {
+    line-height: 18px;
+  }
+  .participate .how-to-participate .how-to-participate-main {
+    margin-top: 20px;
+  }
+}
+@media (max-width: 425px) {
+  .participate .how-to-participate .how-to-participate-main .participate-details .details h4 {
+    padding-left: 30px;
+    font-size: 15px;
+    line-height: 31px;
+  }
+  .participate .how-to-participate .how-to-participate-main .participate-details .details div p:nth-child(1) {
+    font-size: 15px;
+    line-height: 17px;
+    margin-bottom: 12px;
+  }
+  .participate .how-to-participate .how-to-participate-main .participate-details .details div .low-opacity {
+    font-size: 15px;
+    margin-bottom: 3px;
+  }
+  .accordion {
+    padding-right: 0 !important;
+  }
+  .features {
+    padding: 50px 0;
+  }
+  .features .heading {
+    margin-bottom: 50px;
+  }
+}
+@media (max-width: 385px) {
+  .accordion .accordion-item h2 button {
+    font-size: 15px !important;
+  }
+  .footer-logo {
+    justify-content: center;
+  }
+}
+@media (max-width: 380px) {
+  .hotsport-points .hotsport-points-t20 .hotsport-points-nav {
+    gap: 15px;
+    padding-left: 18px;
+  }
+  .hotsport-points .hotsport-points-t20 .hotsport-points-nav p:nth-child(1),
+  .hotsport-points .hotsport-points-t20 .hotsport-points-nav p:nth-child(2),
+  .hotsport-points .hotsport-points-t20 .hotsport-points-nav p:nth-child(3),
+  .hotsport-points .hotsport-points-t20 .hotsport-points-nav p:nth-child(4),
+  .hotsport-points .hotsport-points-t20 .hotsport-points-nav p:nth-child(5) {
+    font-size: 13px;
+  }
+  .hotsport-points .hotsport-points-t20 .hotsport-points-nav p:nth-child(1) span,
+  .hotsport-points .hotsport-points-t20 .hotsport-points-nav p:nth-child(2) span,
+  .hotsport-points .hotsport-points-t20 .hotsport-points-nav p:nth-child(3) span,
+  .hotsport-points .hotsport-points-t20 .hotsport-points-nav p:nth-child(4) span,
+  .hotsport-points .hotsport-points-t20 .hotsport-points-nav p:nth-child(5) span {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: -8px;
+    top: -2px;
+  }
+  .hotsport-points .hotsport-points-t20 .hotsport-points-t20-red-bg p {
+    font-size: 13px;
+    margin-left: 19px;
+  }
+  .hotsport-points .hotsport-points-t20 .other-info div p {
+    font-size: 13px;
+  }
+  .participate .how-to-participate .how-to-participate-main .participate-img .participate-img-bg {
+    width: 217px;
+    height: 177px;
+    left: -24px;
+    top: 161px;
+  }
+  .participate .how-to-participate .how-to-participate-main .participate-img img {
+    top: 45px;
+    max-width: 171px;
+  }
+  .participate .how-to-participate .how-to-participate-main .participate-img .football-img-size {
+    top: 38px;
+  }
+  .img-goto-first {
+    transform: translateY(0px) !important;
+  }
+  .img-goto-second {
+    transform: translateY(24px) !important;
+  }
+  .img-goto-third {
+    transform: translateY(54px) !important;
+  }
+  .img-goto-forth {
+    transform: translateY(85px) !important;
+  }
+  .img-goto-fifth {
+    transform: translateY(113px) !important;
+  }
+}
+@media (max-width: 372px) {
+  .hero-section .hero-section-slider {
+    top: 226px;
+  }
+}
+@media (max-width: 355px) {
+  .features .feature-cards .feature-card {
+    margin: 0px;
+    gap: 7px;
+    padding: 9px;
+  }
+  .features .feature-cards .feature-card .details {
+    width: 202px;
+  }
+  .features .feature-cards .feature-card .details h4 {
+    font-size: 12px;
+  }
+  .features .feature-cards .feature-card .details p {
+    font-size: 9px;
+    line-height: 11px;
+  }
+  .features .feature-cards .feature-card .money-img img, .features .feature-cards .feature-card .win-img img {
+    width: 53px;
+  }
+  .features .feature-cards .feature-card-1::after, .features .feature-cards .feature-card-2::after {
+    content: "";
+    position: absolute;
+    padding: 0px;
+    width: 99.5%;
+    height: 98%;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+  }
+}
+.accordion-button:not(.collapsed) {
+  color: black;
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.accordion {
+  --bs-accordion-border-color: none;
+  --bs-accordion-btn-icon-width:0px;
+  --bs-accordion-btn-focus-box-shadow:none;
+  --bs-accordion-active-color: black;
+  --bs-accordion-active-bg: transparent;
+  border-left: 2px dashed #D12F2F;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 37px;
+  padding: 0px 35px;
+}
+.accordion img {
+  width: 27px;
+  position: absolute;
+  left: -14px;
+  top: 0px;
+  transition: all 1s ease;
+}
+.accordion .img-goto-first {
+  transform: translateY(0px);
+}
+.accordion .img-goto-second {
+  transform: translateY(32px);
+}
+.accordion .img-goto-third {
+  transform: translateY(65px);
+}
+.accordion .img-goto-forth {
+  transform: translateY(98px);
+}
+.accordion .img-goto-fifth {
+  transform: translateY(128px);
+}
+.accordion .accordion-body {
+  padding: 0;
+}
+.accordion .accordion-body p {
+  font-family: Titillium;
+  font-size: 18px;
+  line-height: 26px;
+  margin-bottom: 27px;
+}
+.accordion .accordion-body .low-opacity {
+  font-family: Formula1;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.accordion .accordion-button {
+  padding: 0;
+}
+.accordion .accordion-item h2 button {
+  font-family: Formula1;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: auto;
+  margin-bottom: 11px;
+}/*# sourceMappingURL=styles.css.map */
